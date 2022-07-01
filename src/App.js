@@ -8,18 +8,17 @@ import { Switch, Route } from "react-router-dom";
 function App() {
   return (
 			<>
-						<div className="App">		
-						
-							<header className="App-header">
-								<NavBar />						
-							</header>
-							<main className="Main-header">					
-										<MainThing />
-							</main>
-							<footer className="App-footie">
-								<Footer />
-							</footer>
-						</div>	
+				<div className="App">		
+					<header className="App-header">
+						<NavBar />						
+					</header>
+					<main className="Main-header">					
+								<MainThing />
+					</main>
+					<footer className="App-footie">
+						<Footer />
+					</footer>
+				</div>	
 			</>
   );
 }
