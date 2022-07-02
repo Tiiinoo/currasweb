@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+	font-family: "ZenLoop";
+	src: local("ZenLoop"),
+	 url("./fonts/ZenLoop-Regular.ttf") format("truetype");
+	}

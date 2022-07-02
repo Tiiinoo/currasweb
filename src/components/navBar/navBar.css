@@ -1,3 +1,16 @@
 .navBar {
 	text-align: center;
 }
+
+.navList {
+	font-family: "ZenLoop";
+	font-size: 25px;
+  color: white;
+  font-weight: bolder;
+}
+
+img {
+	height: auto;
+  width: auto;
+  max-width: 60%;
+}

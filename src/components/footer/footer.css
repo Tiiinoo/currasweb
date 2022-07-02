@@ -7,6 +7,14 @@
 	text-align: center;
 	margin-top: 15px;
 	margin-bottom: 10px;
+	font-family: "ZenLoop";
+}
+
+.footerText {
+	font-size: 25px;
+  color: white;
+	font-weight: bolder;
+	font-family: "ZenLoop";
 }
 /* @media only screen and (min-width: 576px) and (max-width:768px) {
 	.footer {
