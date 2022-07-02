@@ -2,15 +2,24 @@
 	text-align: center;
 }
 
+.titleImg {
+	height: auto;
+  width: auto;
+  max-width: 60%;
+}
+
 .navList {
 	font-family: "ZenLoop";
 	font-size: 25px;
   color: white;
-  font-weight: bolder;
+	font-weight: bolder;
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	padding-left: 0;
 }
 
-img {
-	height: auto;
-  width: auto;
-  max-width: 60%;
+.navList a {
+	color: inherit;
+	text-decoration: inherit;
 }
