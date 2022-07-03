@@ -1,15 +1,68 @@
-.mainThingContentainer {
-	margin-top: 80px;
-	text-align: center;
-	font-family: "ZenLoop";
-	font-size: 25px;
-  color: white;
-	font-weight: bolder;
+*, *::before, *::after {
+	box-sizing: border-box;
 }
 
-button {
-	font-family: "ZenLoop";
-	font-size: 25px;
-  color: #000000;
-	font-weight: bolder;	
+.carrousel {
+	width: 100vw;
+  height: 300px;
+	position: relative;
+}
+
+.carrousel > ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.slide {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	text-align: -webkit-center;
+}
+
+.slide > img {
+	display: block;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.slide[data-active] {
+	opacity: 1;
+}
+
+.carrousel button {
+	color: rgba(225, 225, 225, .6);
+	z-index: 2;
+	position: absolute;
+	background: none;
+	border: none;
+	font-size: 2rem;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	border-radius: .25rem;
+	padding: .25rem;
+	background-color: rgba(0, 0, 0, .05);
+	opacity: 0;
+}
+
+.carrousel button:hover,
+.carrousel button:focus {
+	color: rgba(225, 225, 225, .9);
+	background-color: rgba(0, 0, 0, .1);
+	opacity: 1;
+}
+
+.carrousel button:focus {
+	outline: 1px solid rgba(0, 0, 0, .3);
+}
+
+.carrouselButtonNext {
+	right: 2rem !important;
+}
+
+.carrouselButtonPrev {
+	left: 2rem !important;
 }

@@ -8,7 +8,7 @@ export const NavBar = () => {
 	return (
 		<div className="navBar">
 			<div className="title">
-				<a href="/"><img className= "titleImg" src={Title} alt="Fernand Lems - Image - Title" /></a>
+				<Link to="/"><img className= "titleImg" src={Title} alt="Fernand Lems - Image - Title" /></Link>
 			</div>
 			<div className="navListContainer">
 				<ul className="navList">
@@ -16,7 +16,7 @@ export const NavBar = () => {
 							<Link to="/shop">SHOP</Link>
 							</li>
 						<li>
-						<Link to="/accesories">Accesories</Link>
+						<Link to="/accesories">ACCESORIES</Link>
 						</li>
 						<li>
 						<Link to="/hat">HATS</Link>
