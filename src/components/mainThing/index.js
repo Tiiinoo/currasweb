@@ -1,33 +1,41 @@
-import React from 'react';
-import {Background} from '../background/index';
+import React, { useState }from 'react';
 import './mainThing.css'
+import {ClothesData} from '../clothesData';
 
-export const MainThing = () => {
+export const MainThing = ({ slides }) => {
+	const [actualSlide, setActualSlide] = useState(0);
+	const length = slides.length;
 
+const nextSlide = () => {
+	setActualSlide( actualSlide === length - 1 ? 0 : actualSlide + 1 )
+};
+
+const prevSlide = () => {
+	setActualSlide( actualSlide === 0 ? length - 1 : actualSlide - 1 )
+};
+
+
+if(!Array.isArray(slides) || slides.length <= 0) {
+	return null
+}
 
 	return (
-			<section aria-label="Most valued">
+		<>
+			<section className="latestOnes">
 				<div className="carrousel">
-					<button className="carrouselButtonNext">&#8680;</button>
-					<button className="carrouselButtonPrev">&#8678;</button>
-					<ul>
-						<li className="slide" data-active> 
-							<img src="https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-No-Background.png" alt="Red Polo" />
-						</li>
-						<li className="slide"> 
-							<img src="https://www.duracolor.co/components/com_virtuemart/shop_image/product/resized/magictoolbox_cache/dd6b6cfc02e1715d9cb0915c3f4a72c2/813/thumb350x350/fbf14b93f4f018c9a4674221fd3b7b09.png" alt="Black T-shirt" />
-						</li>
-						<li className="slide"> 
-							<img src="https://w7.pngwing.com/pngs/321/746/png-transparent-long-sleeved-t-shirt-dress-shirt-t-shirt-white-textile-apparel.png" alt="Grey shirt" />
-						</li>
-						<li className="slide"> 
-							<img src="https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-Free-PNG.png" alt="Black shirt" />
-						</li>
-						<li className="slide"> 
-							<img src="https://media.istockphoto.com/vectors/tshirt-white-mockup-vector-realistic-template-isolated-on-transparent-vector-id1352674402?b=1&k=20&m=1352674402&s=612x612&w=0&h=1R_BRjT3mcbkXj7xU665lbc4GhXZqdBf5ftf-zlYHQo=" alt="White Tshirt" />
-						</li>
-					</ul>
+				<button className="carrouselButtonNext" onClick={nextSlide}>&#8680;</button>
+				<button className="carrouselButtonPrev" onClick={prevSlide}>&#8678;</button>
+					{ClothesData.map((slide, index) => {
+							return ( 
+							<div className={ index === actualSlide ? 'slide active' : 'slide'} key={index}>
+								{ index === actualSlide && (<img src={slide.image} alt={slide.alt} className="image" />)}
+							</div>	
+							)
+						})
+					}
 				</div>	
 			</section>	
+		</>
+	
 	)
-}
+};

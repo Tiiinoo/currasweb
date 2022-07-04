@@ -10,6 +10,7 @@ import { About } from './components/about';
 import { Contact } from './components/contact';
 import { Footer } from './components/footer';
 import { Switch, Route, Routes } from "react-router-dom";
+import { ClothesData } from './components/clothesData'
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
 					<main className="Main-header">					
 						<Background />
 						<Routes>
-							<Route path="/"	element={<MainThing />} />
+							<Route path="/"	element={<MainThing slides={ ClothesData } />} />
 							<Route path="/shop"	element={<Shop />} />
 							<Route path="/accesories"	element={<Accesories />} />
 							<Route path="/hat"	element={<Hat />} />
