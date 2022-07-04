@@ -9,7 +9,7 @@ import { Policies } from './components/policies';
 import { About } from './components/about';
 import { Contact } from './components/contact';
 import { Footer } from './components/footer';
-import { Switch, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { ClothesData } from './components/clothesData'
 
 function App() {
