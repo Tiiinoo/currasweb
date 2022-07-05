@@ -1,10 +1,11 @@
 import React from 'react'
 import './accesories.css'
 
-export const Accesories = () => { 
+
+export const Accesories = () => { 	
 	return (
 		<div>
-			<p>Acá irán todos los accesorios</p>
+			<p>Acá irán los accesorios</p>
 		</div>
 	)
 }

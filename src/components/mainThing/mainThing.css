@@ -1,4 +1,46 @@
-*, *::before, *::after {
+p {
+	font-family: "ZenLoop";
+	font-size: 25px;
+  color: white;
+	font-weight: bolder;
+}
+.sliderContainer {
+	width: 100vw;
+	max-height: 250px;
+}
+.sliderShow {
+	width: 100%;
+	white-space: nowrap;
+	transition:linear 1s;
+}
+.slider {
+	display: inline-block;
+  height: 250px;
+	width: 100%;
+	text-align: center;
+}
+.images {
+	max-width: auto;
+	height: inherit;
+}
+.slidesShowDots {
+  text-align: center;
+}
+.slidesDot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 10px 7px 0px;
+  background-color: white;
+}
+
+.slidesDot.active {
+	background-color: #c4c4c4;
+}
+
+/* *, *::before, *::after {
 	box-sizing: border-box;
 }
 
@@ -61,4 +103,4 @@
 
 .carrouselButtonPrev {
 	left: 2rem !important;
-}
+} */
