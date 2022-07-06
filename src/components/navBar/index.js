@@ -1,7 +1,7 @@
 import React from 'react'
 import './navBar.css'
 import Title from '../images/title.jpg'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export const NavBar = () => {
 
@@ -13,13 +13,13 @@ export const NavBar = () => {
 			<div className="navListContainer">
 				<ul className="navList">
 						<li>
-							<Link to="/shop">SHOP</Link>
+							<NavLink to={`category/shop`}>SHOP</NavLink>
 							</li>
 						<li>
-						<Link to="/accesories">ACCESORIES</Link>
+						<NavLink to={`category/accesories`}>ACCESORIES</NavLink>
 						</li>
 						<li>
-						<Link to="/hat">HATS</Link>
+						<NavLink to={`category/hats`}>HATS</NavLink>
 						</li>
 				</ul>
 			</div>

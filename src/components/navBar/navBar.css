@@ -4,8 +4,9 @@
 
 .titleImg {
 	height: auto;
-  width: auto;
-  max-width: 60%;
+	width: auto;
+	max-width: 40vw;
+	margin-top: 20px;
 }
 
 .navList {
