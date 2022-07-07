@@ -19,6 +19,7 @@ function App() {
 						<Background />
 						<Routes>
 							<Route path="/" element={<ShowClothes />} /> 
+							<Route path="/category/:id" element={<ShowClothes />} />
 							<Route path="/about" element={<About />} />
 							<Route path="/policies" element={<Policies />} />
 							<Route path="/contact" element={<Contact />} />

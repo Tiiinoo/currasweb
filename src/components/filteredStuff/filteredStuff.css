@@ -1,0 +1,10 @@
+.articlesContainer {
+	position: relative;
+	height: 300px;
+	width: 100vw;
+	text-align: center;
+}
+
+img {
+	max-height: 200px;
+}
