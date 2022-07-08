@@ -1,5 +1,4 @@
 import './App.css';
-import {Background} from './components/background';
 import { NavBar } from './components/navBar';
 import { Policies } from './components/policies';
 import { About } from './components/about';
@@ -13,12 +12,12 @@ function App() {
 			<>
 				<div className="App">		
 					<header className="App-header">
-						<NavBar />						
+						<NavBar />
 					</header>
 					<main className="Main-header">					
-						<Background />
 						<Routes>
-							<Route path="/" element={<ShowClothes />} /> 
+							<Route path="/" element={<ShowClothes />}>
+							</Route>	
 							<Route path="/category/:id" element={<ShowClothes />} />
 							<Route path="/about" element={<About />} />
 							<Route path="/policies" element={<Policies />} />

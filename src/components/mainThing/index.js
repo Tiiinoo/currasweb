@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './mainThing.css'
 import { ClothesData } from '../clothesData'
+import {Background} from '../background';
 
 export const MainThing = () => { 
 	const[index, setIndex] = useState(0)
@@ -29,6 +30,8 @@ export const MainThing = () => {
 	}, [index])
 	
 	return (
+	<>
+		<Background />
 		<div className="sliderContainer">
 			<div className="sliderShow" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
 			{ClothesData.map( ( data, index ) => (
@@ -45,5 +48,6 @@ export const MainThing = () => {
 				))}
 			</div>
 		</div>
+		</>
 	)
 }

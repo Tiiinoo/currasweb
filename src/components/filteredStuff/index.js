@@ -5,15 +5,15 @@ import { useParams } from 'react-router-dom'
 export function FilteredStuff({items = []}) {
 	const {id} = useParams()
 
-	console.log(items)
+	const teta = () => console.log(id)
 	
 	return (
 
 		<>
 		 <div className="articlesContainer">
-		 	<p>Acá te filtro los {id}</p>
+		 	<p>Acá filtro los {id}</p>
 			 {items.map((data, index) => (
-			 <img src={data.image} key={index} />
+			 <img src={data.image} alt={data.alt} key={index} onClick={teta} />
 		 ))}
 		 </div>
 		</>
