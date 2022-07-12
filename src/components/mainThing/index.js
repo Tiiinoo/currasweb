@@ -30,7 +30,7 @@ export const MainThing = () => {
 	}, [index])
 	
 	return (
-	<>
+	<div className="container">
 		<Background />
 		<div className="sliderContainer">
 			<div className="sliderShow" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
@@ -48,6 +48,6 @@ export const MainThing = () => {
 				))}
 			</div>
 		</div>
-		</>
+		</div>
 	)
 }

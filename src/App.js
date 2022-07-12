@@ -10,11 +10,11 @@ import { ShowClothes } from './components/showClothes'
 function App() {
   return (
 			<>
-				<div className="App">		
-					<header className="App-header">
+				<div className="app">		
+						<header className="appHeader">
 						<NavBar />
-					</header>
-					<main className="Main-header">					
+						</header>
+						<main className="appMain">
 						<Routes>
 							<Route path="/" element={<ShowClothes />}>
 							</Route>	
@@ -22,12 +22,12 @@ function App() {
 							<Route path="/about" element={<About />} />
 							<Route path="/policies" element={<Policies />} />
 							<Route path="/contact" element={<Contact />} />
-						</Routes>	
-					</main>
-					<footer className="App-footie">
+						</Routes>			
+						</main>
+						<footer className="App-footie">
 						<Footer />
-					</footer>
-				</div>	
+						</footer>
+				</div>
 			</>
   );
 }
