@@ -4,7 +4,8 @@ p {
   color: white;
 	font-weight: bolder;
 }
-.container {
+
+/* .container {
 	position: absolute;
 	min-height: 100vh;
 	min-width: 100vw;
@@ -13,7 +14,7 @@ p {
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
-}
+} */
 
 .sliderContainer {
 	width: 100vw;

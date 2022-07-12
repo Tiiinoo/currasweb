@@ -11,7 +11,6 @@ export function FilteredStuff({items = []}) {
 
 		<>
 		 <div className="articlesContainer">
-		 	<p>Acá filtro los {id}</p>
 			 {items.map((data, index) => (
 			 <img src={data.image} alt={data.alt} key={index} onClick={teta} />
 		 ))}

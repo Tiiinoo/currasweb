@@ -6,6 +6,7 @@ import { Contact } from './components/contact';
 import { Footer } from './components/footer';
 import { Route, Routes } from "react-router-dom";
 import { ShowClothes } from './components/showClothes'
+import {Background} from './components/background'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 						<NavBar />
 						</header>
 						<main className="appMain">
+						<Background />
 						<Routes>
 							<Route path="/" element={<ShowClothes />}>
 							</Route>	
@@ -24,8 +26,8 @@ function App() {
 							<Route path="/contact" element={<Contact />} />
 						</Routes>			
 						</main>
-						<footer className="App-footie">
-						<Footer />
+						<footer className="appFootie">
+							<Footer />
 						</footer>
 				</div>
 			</>

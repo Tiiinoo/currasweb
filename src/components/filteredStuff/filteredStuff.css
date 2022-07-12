@@ -1,8 +1,9 @@
 .articlesContainer {
 	position: relative;
-	height: 300px;
+	height: 250px;
 	width: 100vw;
 	text-align: center;
+	margin-top: 10px;
 }
 
 img {
