@@ -1,5 +1,5 @@
 import './App.css';
-import { NavBar } from './components/navBar';
+import { NavBar } from './components/navBar'
 import { Policies } from './components/policies';
 import { About } from './components/about';
 import { Contact } from './components/contact';
@@ -12,23 +12,16 @@ function App() {
   return (
 			<>
 				<div className="app">		
-						<header className="appHeader">
 						<NavBar />
-						</header>
-						<main className="appMain">
 						<Background />
 						<Routes>
-							<Route path="/" element={<ShowClothes />}>
-							</Route>	
+							<Route path="/" element={<ShowClothes />} />
 							<Route path="/category/:id" element={<ShowClothes />} />
 							<Route path="/about" element={<About />} />
 							<Route path="/policies" element={<Policies />} />
 							<Route path="/contact" element={<Contact />} />
-						</Routes>			
-						</main>
-						<footer className="appFootie">
-							<Footer />
-						</footer>
+						</Routes>	
+						<Footer />
 				</div>
 			</>
   );
