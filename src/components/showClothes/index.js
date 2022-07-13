@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { ClothesData } from '../clothesData'
+// import { NavBar } from '../navBar'
+import {Background} from '../background'
 import { MainThing } from '../mainThing'
 import { FilteredStuff } from '../filteredStuff'
 import { useParams } from 'react-router-dom'
@@ -9,6 +11,7 @@ export function ShowClothes() {
 
 	return (
 		<>
+			<Background />
 			{ id == null 
 						?
 						<MainThing slides={ ClothesData } /> 
