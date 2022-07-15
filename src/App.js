@@ -1,5 +1,4 @@
 import './App.css';
-import { NavBar } from './components/navBar'
 import { Policies } from './components/policies';
 import { About } from './components/about';
 import { Contact } from './components/contact';
@@ -8,12 +7,16 @@ import { Route, Routes } from "react-router-dom";
 import { ShowClothes } from './components/showClothes'
 import {Background} from './components/background'
 
+import { NavBar } from './components/navBar'
+
+
 function App() {
   return (
 			<>
-				<div className="app">		
-						<NavBar />
+				<div className="app">	
 						<Background />
+						<NavBar />
+						
 						<Routes>
 							<Route path="/" element={<ShowClothes />} />
 							<Route path="/category/:id" element={<ShowClothes />} />
